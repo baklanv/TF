@@ -1,0 +1,636 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="Avatar" xml:space="preserve">
+    <value>Profile avatar</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="Birthdays" xml:space="preserve">
+    <value>Birthdays</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Change" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="ChangeEmployeeHeader" xml:space="preserve">
+    <value>Change employee</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="AboutMe" xml:space="preserve">
+    <value>About me</value>
+  </data>
+  <data name="CommentsEmpty" xml:space="preserve">
+    <value>Comments empty</value>
+  </data>
+  <data name="ConfirmationMessage" xml:space="preserve">
+    <value>Do you really want to delete the record?</value>
+  </data>
+  <data name="ConfirmationTitle" xml:space="preserve">
+    <value>Confirmation of the action</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="CreateComment" xml:space="preserve">
+    <value>Create comment</value>
+  </data>
+  <data name="EditAboutMe" xml:space="preserve">
+    <value>Edit information about me</value>
+  </data>
+  <data name="CreateEmployeeHeader" xml:space="preserve">
+    <value>Create employee</value>
+  </data>
+  <data name="AddSkills" xml:space="preserve">
+    <value>Add skills</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Departments" xml:space="preserve">
+    <value>Departments</value>
+  </data>
+  <data name="DocumentRegisters" xml:space="preserve">
+    <value>Document-registers</value>
+  </data>
+  <data name="DocumentStreams" xml:space="preserve">
+    <value>Document-streams</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="EmployeeNotFound" xml:space="preserve">
+    <value>Employee not found</value>
+  </data>
+  <data name="Employees" xml:space="preserve">
+    <value>Employees</value>
+  </data>
+  <data name="Events" xml:space="preserve">
+    <value>Events</value>
+  </data>
+  <data name="FileUpload" xml:space="preserve">
+    <value>Drop file here or</value>
+  </data>
+  <data name="Flows" xml:space="preserve">
+    <value>Flows</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home page</value>
+  </data>
+  <data name="HotLineSettings" xml:space="preserve">
+    <value>Hot line settings</value>
+  </data>
+  <data name="Invite" xml:space="preserve">
+    <value>Invite</value>
+  </data>
+  <data name="Invited" xml:space="preserve">
+    <value>Invited</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="NameHeader" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="PhotoAlbums" xml:space="preserve">
+    <value>Photo albums</value>
+  </data>
+  <data name="Polls" xml:space="preserve">
+    <value>Polls</value>
+  </data>
+  <data name="Skills" xml:space="preserve">
+    <value>Skills</value>
+  </data>
+  <data name="Skills are empty" xml:space="preserve">
+    <value>Skills are empty</value>
+  </data>
+  <data name="Trends" xml:space="preserve">
+    <value>Trends</value>
+  </data>
+  <data name="Work" xml:space="preserve">
+    <value>Work</value>
+  </data>
+  <data name="AddingSkills" xml:space="preserve">
+    <value>Adding skills</value>
+  </data>
+  <data name="ChoosingSkills" xml:space="preserve">
+    <value>Choosing skills for employee</value>
+  </data>
+  <data name="InfoSections" xml:space="preserve">
+    <value>Information sections</value>
+  </data>
+  <data name="AddInfoCategory" xml:space="preserve">
+    <value>Add information category</value>
+  </data>
+  <data name="CreateInfoSectionHeader" xml:space="preserve">
+    <value>Create information section</value>
+  </data>
+  <data name="InfoCategories" xml:space="preserve">
+    <value>Information categories</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="UpdateInfoSectionHeader" xml:space="preserve">
+    <value>Update information section</value>
+  </data>
+  <data name="InSystem" xml:space="preserve">
+    <value>In system</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="CreateInformationHeader" xml:space="preserve">
+    <value>Create information record</value>
+  </data>
+  <data name="UpdateInformationHeader" xml:space="preserve">
+    <value>Update information</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="No education" xml:space="preserve">
+    <value>No education</value>
+  </data>
+  <data name="AddEducation" xml:space="preserve">
+    <value>Add education</value>
+  </data>
+  <data name="Education" xml:space="preserve">
+    <value>Education</value>
+  </data>
+  <data name="EditEducation" xml:space="preserve">
+    <value>Edit education</value>
+  </data>
+  <data name="AddLink" xml:space="preserve">
+    <value>Add link</value>
+  </data>
+  <data name="Links" xml:space="preserve">
+    <value>Links</value>
+  </data>
+  <data name="EditLink" xml:space="preserve">
+    <value>Edit link</value>
+  </data>
+  <data name="Experience" xml:space="preserve">
+    <value>Experience</value>
+  </data>
+  <data name="AddExperience" xml:space="preserve">
+    <value>Add experience</value>
+  </data>
+  <data name="No experience" xml:space="preserve">
+    <value>No experience</value>
+  </data>
+  <data name="GetReportAllEmployees" xml:space="preserve">
+    <value>Get a report on all employees (.csv)</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="SickDays" xml:space="preserve">
+    <value>Sick days</value>
+  </data>
+  <data name="VacationDays" xml:space="preserve">
+    <value>Vacation days</value>
+  </data>
+  <data name="WorkDays" xml:space="preserve">
+    <value>Work days</value>
+  </data>
+  <data name="WorkTime" xml:space="preserve">
+    <value>Work time</value>
+  </data>
+  <data name="BadRequest" xml:space="preserve">
+    <value>Bad request</value>
+  </data>
+  <data name="Unauthorized" xml:space="preserve">
+    <value>You are unauthorized</value>
+  </data>
+  <data name="Forbidden" xml:space="preserve">
+    <value>Access is forbidden</value>
+  </data>
+  <data name="NotFound" xml:space="preserve">
+    <value>Requested resource is not found</value>
+  </data>
+  <data name="ServerError" xml:space="preserve">
+    <value>Server-side error</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Details:</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="UpdateConfirmation" xml:space="preserve">
+    <value>Do you want to save the entered data?</value>
+  </data>
+  <data name="Structure" xml:space="preserve">
+    <value>Structure</value>
+  </data>
+  <data name="InfoRecords" xml:space="preserve">
+    <value>Info records</value>
+  </data>
+  <data name="InformationAndEDO" xml:space="preserve">
+    <value>Info and EDO</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Roles</value>
+  </data>
+  <data name="PortalSettings" xml:space="preserve">
+    <value>Portal settings</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>month</value>
+  </data>
+  <data name="MyWorkingTime" xml:space="preserve">
+    <value>My working time</value>
+  </data>
+  <data name="NotSet" xml:space="preserve">
+    <value>Not set</value>
+  </data>
+  <data name="Quarter" xml:space="preserve">
+    <value>quarter</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>week</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>year</value>
+  </data>
+  <data name="April" xml:space="preserve">
+    <value>April</value>
+  </data>
+  <data name="August" xml:space="preserve">
+    <value>August</value>
+  </data>
+  <data name="December" xml:space="preserve">
+    <value>December</value>
+  </data>
+  <data name="February" xml:space="preserve">
+    <value>February</value>
+  </data>
+  <data name="January" xml:space="preserve">
+    <value>January</value>
+  </data>
+  <data name="July" xml:space="preserve">
+    <value>July</value>
+  </data>
+  <data name="June" xml:space="preserve">
+    <value>June</value>
+  </data>
+  <data name="March" xml:space="preserve">
+    <value>March</value>
+  </data>
+  <data name="May" xml:space="preserve">
+    <value>May</value>
+  </data>
+  <data name="November" xml:space="preserve">
+    <value>November</value>
+  </data>
+  <data name="October" xml:space="preserve">
+    <value>October</value>
+  </data>
+  <data name="September" xml:space="preserve">
+    <value>September</value>
+  </data>
+  <data name="EditPhase" xml:space="preserve">
+    <value>Edit phase</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Check" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="FlowAdding" xml:space="preserve">
+    <value>Flow adding</value>
+  </data>
+  <data name="Authorization" xml:space="preserve">
+    <value>Authorization</value>
+  </data>
+  <data name="CongratulateEnable" xml:space="preserve">
+    <value>Opportunity to congratulate</value>
+  </data>
+  <data name="DateInProfileEnable" xml:space="preserve">
+    <value>Display the date of birth in your personal profile</value>
+  </data>
+  <data name="ShowBirthdaysEnable" xml:space="preserve">
+    <value>Show a block of upcoming birthdays</value>
+  </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>Sign in</value>
+  </data>
+  <data name="DateLabel" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="ReinviteTitle" xml:space="preserve">
+    <value>Send a repeat invitation?</value>
+  </data>
+  <data name="TimeLabel" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="UpdateCalendarEvent" xml:space="preserve">
+    <value>Update calendar event</value>
+  </data>
+  <data name="AddDepartment" xml:space="preserve">
+    <value>Add department</value>
+  </data>
+  <data name="AddDepartmentEmployee" xml:space="preserve">
+    <value>Add department employee</value>
+  </data>
+  <data name="AddEmployee" xml:space="preserve">
+    <value>Add employee</value>
+  </data>
+  <data name="CreateDocumentKind" xml:space="preserve">
+    <value>Create document kind</value>
+  </data>
+  <data name="UpdateDepartment" xml:space="preserve">
+    <value>Update the department</value>
+  </data>
+  <data name="AddEmployeeComment" xml:space="preserve">
+    <value>Add comment to employee</value>
+  </data>
+  <data name="AddLinkDescription" xml:space="preserve">
+    <value>Add link - select two stages by holding down "Ctrl" and click the "Add link" button</value>
+  </data>
+  <data name="AddPhaseDescription" xml:space="preserve">
+    <value>Add phase - adds a stage to the diagram</value>
+  </data>
+  <data name="ChangeHotLineSettings" xml:space="preserve">
+    <value>Change settings for hot line</value>
+  </data>
+  <data name="ChangeNews" xml:space="preserve">
+    <value>Change news</value>
+  </data>
+  <data name="ChangePhaseDescription" xml:space="preserve">
+    <value>Change phase - select the phase and click the button</value>
+  </data>
+  <data name="CreateHotLineSettings" xml:space="preserve">
+    <value>Create settings for hot line</value>
+  </data>
+  <data name="CreateNews" xml:space="preserve">
+    <value>Create news</value>
+  </data>
+  <data name="DeleteLinkDescription" xml:space="preserve">
+    <value>Delete link - select the link and click the button</value>
+  </data>
+  <data name="DeletePhaseDescription" xml:space="preserve">
+    <value>Delete phase - select a phase by clicking, then click the "Delete phase"</value>
+  </data>
+  <data name="AddPhoto" xml:space="preserve">
+    <value>Add photo</value>
+  </data>
+  <data name="AddPhotoAlbum" xml:space="preserve">
+    <value>Add photo album</value>
+  </data>
+  <data name="AddPoll" xml:space="preserve">
+    <value>Add poll</value>
+  </data>
+  <data name="AnswerOptions" xml:space="preserve">
+    <value>Answer options</value>
+  </data>
+  <data name="ChangePhotoAlbum" xml:space="preserve">
+    <value>Change photo album</value>
+  </data>
+  <data name="ChangePoll" xml:space="preserve">
+    <value>Change poll</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>No content</value>
+  </data>
+  <data name="Photo" xml:space="preserve">
+    <value>Photo</value>
+  </data>
+  <data name="PhotoAlbum" xml:space="preserve">
+    <value>Photo album</value>
+  </data>
+  <data name="PhotoAlbumInfo" xml:space="preserve">
+    <value>Information about photo album</value>
+  </data>
+  <data name="PollResults" xml:space="preserve">
+    <value>Poll results</value>
+  </data>
+  <data name="AddTrend" xml:space="preserve">
+    <value>Add trend</value>
+  </data>
+  <data name="AddTrendEmployee" xml:space="preserve">
+    <value>Add trend's employee</value>
+  </data>
+  <data name="UpdateTrend" xml:space="preserve">
+    <value>Update trend</value>
+  </data>
+  <data name="UpdateTrendEmployee" xml:space="preserve">
+    <value>Update trend's employee</value>
+  </data>
+  <data name="AttentionHeader" xml:space="preserve">
+    <value>Attention! Here are the settings of the entire company</value>
+  </data>
+  <data name="Index" xml:space="preserve">
+    <value>Start page</value>
+  </data>
+  <data name="NoUpdater" xml:space="preserve">
+    <value>There is no editor</value>
+  </data>
+  <data name="WelcomeHeader" xml:space="preserve">
+    <value>Welcome to Updoc Administration</value>
+  </data>
+  <data name="Levels" xml:space="preserve">
+    <value>Levels</value>
+  </data>
+  <data name="NewsCategories" xml:space="preserve">
+    <value>News categories</value>
+  </data>
+  <data name="Positions" xml:space="preserve">
+    <value>Positions</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="AddLevel" xml:space="preserve">
+    <value>Add level</value>
+  </data>
+  <data name="AddSkill" xml:space="preserve">
+    <value>Add skill</value>
+  </data>
+  <data name="EditLevel" xml:space="preserve">
+    <value>Edit level</value>
+  </data>
+  <data name="EditSkill" xml:space="preserve">
+    <value>Edit skill</value>
+  </data>
+  <data name="AddPosition" xml:space="preserve">
+    <value>Add position</value>
+  </data>
+  <data name="AddNewsCategory" xml:space="preserve">
+    <value>Add news category</value>
+  </data>
+  <data name="EditNewsCategory" xml:space="preserve">
+    <value>Edit news category</value>
+  </data>
+  <data name="EditPosition" xml:space="preserve">
+    <value>Edit position</value>
+  </data>
+  <data name="DeleteLevel" xml:space="preserve">
+    <value>Are you sure you want to remove the level?</value>
+  </data>
+  <data name="DeletePosition" xml:space="preserve">
+    <value>Are you sure you want to remove the position?</value>
+  </data>
+  <data name="DeleteSkill" xml:space="preserve">
+    <value>Are you sure you want to remove the skill? Removal will affect related employee skills</value>
+  </data>
+  <data name="FlowLinkUpdate" xml:space="preserve">
+    <value>Flow link update</value>
+  </data>
+  <data name="CheckFlow" xml:space="preserve">
+    <value>Check flow</value>
+  </data>
+  <data name="IsEndStartPhasesExists" xml:space="preserve">
+    <value>The process has the stages Start of the process and End of the process.</value>
+  </data>
+  <data name="AllPhasesHasLinks" xml:space="preserve">
+    <value>There are no unrelated steps in the process</value>
+  </data>
+  <data name="EndStartPhasesAreSingle" xml:space="preserve">
+    <value>There is only one stage in the process Start of the process and one stage End of the process</value>
+  </data>
+  <data name="HasRoutePhases" xml:space="preserve">
+    <value>There are stages in the process besides the Start of the process and the End of the process</value>
+  </data>
+  <data name="PhasesHasExecutors" xml:space="preserve">
+    <value>The stages of the process have the Contractor (except for the Beginning of the process and the End of the process)</value>
+  </data>
+</root>

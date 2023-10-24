@@ -1,0 +1,20 @@
+﻿@page "/login"
+@using TF.Components
+@layout DefaultLayout
+@inherits BaseComponent
+
+<Card Title="Authorization">
+  <div>
+    <input class="input-field"
+      @bind="_token"
+      type="text"/>
+  </div>
+
+  
+    @* <p role="status">Current token: @_token</p> *@
+
+
+  <Button
+    OnClick="LogIn"
+    RightIconClass="bi bi-arrow-right" />
+</Card>

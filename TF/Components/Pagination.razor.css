@@ -1,0 +1,50 @@
+﻿.navigation {
+  margin-left: auto;
+}
+
+.pagination-point {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  gap: 10px;
+  background: #FFFFFF;
+  border: 1px solid #D3D3E3;
+  border-radius: 8px;
+  margin: 0px 2px 0px 2px;
+}
+
+.selected-page {
+  background: #807D9B;
+  color: #F0F0F5;
+}
+
+.count-dropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 16px;
+  width: 98px;
+  height: 36px;
+  background: #F9F9FB;
+  border: 1px solid #D3D3E3;
+  border-radius: 8px;
+}
+
+.pagination-header {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 0px 12px 0px;
+  gap: 24px;
+  width: 100%;
+}
+
+@media (max-width: 1040px) {
+  .pagination-header {
+    flex-wrap: wrap;
+  }
+}

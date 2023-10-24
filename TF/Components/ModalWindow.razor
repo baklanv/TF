@@ -1,0 +1,39 @@
+﻿<style>
+  .updoc-modal#@ModalId {
+    backdrop-filter: blur(5px);
+    overflow-y: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .custom-modal-dialog#@ModalId {
+    display: flex;
+    width: @WindowWidth;
+    height: @WindowHeight;
+    align-self: @AlignSelf;
+  }
+
+  .custom-modal-dialog#@ModalId > .modal-content > .modal-body {
+    overflow-y: @OverflowY;
+  }
+</style>
+
+@if (_showModal) {
+  <div class="modal fade show updoc-modal" id="@ModalId" tabindex="-1" role="dialog" aria-hidden="false">
+    <div role="document" id="@ModalId" class="custom-modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          @Header
+        </div>
+        <div class="modal-body">
+          @Body
+        </div>
+        <dvi class="modal-footer">
+          @Footer
+        </dvi>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop fade show"></div>
+}

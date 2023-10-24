@@ -1,0 +1,13 @@
+﻿<button type="@Type" class="updoc-button" style="margin: 0px;" @onclick="@OnClick">
+  @if (!string.IsNullOrEmpty(LeftIconClass))
+  {
+    <i class="@LeftIconClass"></i>
+  }
+
+  @Label
+
+  @if (!string.IsNullOrEmpty(RightIconClass))
+  {
+    <i class="@RightIconClass"></i>
+  }
+</button>
