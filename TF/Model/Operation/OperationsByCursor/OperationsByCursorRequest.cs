@@ -2,7 +2,7 @@
 
 namespace TF.Model.Operation.OperationsByCursor
 {
-    public class GetOperationsByCursorRequest
+    public class OperationsByCursorRequest
     {
         /// <summary>
         /// Идентификатор счёта клиента. Обязательный параметр для данного метода, остальные параметры опциональны.

@@ -5,7 +5,7 @@
         /// <summary>
         /// Целая часть суммы, может быть отрицательным числом.
         /// </summary>
-        public int Units { get; set; }
+        public string Units { get; set; }
 
         /// <summary>
         /// Дробная часть суммы, может быть отрицательным числом.

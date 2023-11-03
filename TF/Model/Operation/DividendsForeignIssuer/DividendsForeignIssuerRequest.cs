@@ -1,6 +1,6 @@
 ﻿namespace TF.Model.Operation.DividendsForeignIssuer
 {
-    public class GetDividendsForeignIssuerRequest
+    public class DividendsForeignIssuerRequest
     {
         /// <summary>
         /// Объект запроса формирования отчёта.
@@ -10,6 +10,6 @@
         /// <summary>
         /// Объект запроса сформированного отчёта.
         /// </summary>
-        public GetDividendsForeignIssuerReportRequest GetDivForeignIssuerReport { get; set; }
+        public DividendsForeignIssuerReportRequest GetDivForeignIssuerReport { get; set; }
     }
 }

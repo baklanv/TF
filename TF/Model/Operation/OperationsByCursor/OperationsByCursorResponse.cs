@@ -1,6 +1,6 @@
 ﻿namespace TF.Model.Operation.OperationsByCursor
 {
-    public class GetOperationsByCursorResponse
+    public class OperationsByCursorResponse
     {
         /// <summary>
         /// Признак, есть ли следующий элемент.

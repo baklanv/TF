@@ -1,6 +1,6 @@
 ﻿namespace TF.Model.Operation.DividendsForeignIssuer
 {
-    public class GetDividendsForeignIssuerReportRequest
+    public class DividendsForeignIssuerReportRequest
     {
         /// <summary>
         /// Идентификатор задачи формирования отчёта.

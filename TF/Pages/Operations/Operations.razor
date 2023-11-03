@@ -3,18 +3,33 @@
 @inject HttpClient httpClient
 <PageTitle>Counter</PageTitle>
 
-<h1>Counter</h1>
+@* <h1>Маржин</h1>
 
-<h2>@httpClient.BaseAddress</h2>
-<p role="status">Current count: @currentCount</p>
+<p role="status">Current count: @Commission</p>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<button class="btn btn-primary" @onclick="CalculateTheCommission">Посчитать комиссию</button> *@
+<LoadingContent IsLoadingFinish="@_isLoadingFinish">
+	<Pagination EntitiesCount="@OperationsResponse.Operations.Count"
+				PageContext="@_pageContext"
+				PageContextChanged="@GetPortfolioAsync"
+				Spread="2"> 
+		<Table Items="@OperationsResponse.Operations">
+			<TableHeader>
+				<th>Дата</th>
+				<th>Тип</th>
+				<th>Валюта</th>
+				<th>Целая часть</th>
+				<th>Дробная</th>
+			</TableHeader>
 
-@code {
-    private int currentCount = 0;
+			<RowTemplate Context="operationsEntity">
+				<th scope="row">@operationsEntity.Date</th>
+				<td scope="row">@operationsEntity.OperationType</td>
+				<td scope="row">@operationsEntity.Payment.Currency</td>
+				<td scope="row">@operationsEntity.Payment.Units</td>
+				<td scope="row">@operationsEntity.Payment.Nano</td>
 
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
-}
+			</RowTemplate>
+		</Table>
+	 </Pagination> 
+</LoadingContent>

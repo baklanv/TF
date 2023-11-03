@@ -1,12 +1,9 @@
 ﻿using Microsoft.AspNetCore.Components;
-using Microsoft.Extensions.Localization;
 
 namespace TF.Components
 {
     public partial class Pagination
     {
-        [Inject]
-        public IStringLocalizer<PlaceholderResource> PlaceholderLocalizer { get; set; }
 
         [Parameter]
         public PageContext PageContext { get; set; }
@@ -42,7 +39,7 @@ namespace TF.Components
         protected override void OnInitialized()
         {
             base.OnInitialized();
-            SearchPlaceholder ??= PlaceholderLocalizer["SearchPlaceholder"];
+            SearchPlaceholder ??= "123";
         }
 
         private async Task OnPageChangeAsync(int page)

@@ -43,7 +43,7 @@ namespace TF.Model.Operation.Operations
         /// <summary>
         /// Неисполненный остаток по сделке.
         /// </summary>
-        public string QquantityRest { get; set; }
+        public string QuantityRest { get; set; }
 
         /// <summary>
         /// Figi-идентификатор инструмента, связанного с операцией.

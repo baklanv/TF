@@ -23,6 +23,7 @@ namespace TF
             builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthStateProvider>();
             builder.Services.AddAuthorizationCore();
             builder.Services.AddBlazoredLocalStorage();
+
             //builder.Services.AddLocalization();
 
 

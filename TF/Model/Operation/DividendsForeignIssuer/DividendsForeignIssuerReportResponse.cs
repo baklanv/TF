@@ -1,6 +1,6 @@
 ﻿namespace TF.Model.Operation.DividendsForeignIssuer
 {
-    public class GetDividendsForeignIssuerReportResponse
+    public class DividendsForeignIssuerReportResponse
     {
         /// <summary>
         /// Отчёт "Справка о доходах за пределами РФ".
