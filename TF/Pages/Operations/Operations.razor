@@ -3,33 +3,65 @@
 @inject HttpClient httpClient
 <PageTitle>Counter</PageTitle>
 
-@* <h1>Маржин</h1>
+<h1>Маржин</h1>
 
 <p role="status">Current count: @Commission</p>
 
-<button class="btn btn-primary" @onclick="CalculateTheCommission">Посчитать комиссию</button> *@
+<button class="btn btn-primary" @onclick="CalculateTheCommission">Посчитать комиссию</button>
+
 <LoadingContent IsLoadingFinish="@_isLoadingFinish">
-	<Pagination EntitiesCount="@OperationsResponse.Operations.Count"
-				PageContext="@_pageContext"
-				PageContextChanged="@GetPortfolioAsync"
-				Spread="2"> 
-		<Table Items="@OperationsResponse.Operations">
-			<TableHeader>
-				<th>Дата</th>
-				<th>Тип</th>
-				<th>Валюта</th>
-				<th>Целая часть</th>
-				<th>Дробная</th>
-			</TableHeader>
+	<Table Items="@OperationsMargin.Operations">
+		<TableHeader>
+			<th>Дата</th>
+			<th>Тип</th>
+			<th>Валюта</th>
+			<th>Целая часть</th>
+			<th>Дробная</th>
+		</TableHeader>
 
-			<RowTemplate Context="operationsEntity">
-				<th scope="row">@operationsEntity.Date</th>
-				<td scope="row">@operationsEntity.OperationType</td>
-				<td scope="row">@operationsEntity.Payment.Currency</td>
-				<td scope="row">@operationsEntity.Payment.Units</td>
-				<td scope="row">@operationsEntity.Payment.Nano</td>
+		<RowTemplate Context="operationsEntity">
+			<th scope="row">@operationsEntity.Date</th>
+			<td scope="row">@operationsEntity.OperationType</td>
+			<td scope="row">@operationsEntity.Payment.Currency</td>
+			<td scope="row">@operationsEntity.Payment.Units</td>
+			<td scope="row">@operationsEntity.Payment.Nano</td>
 
-			</RowTemplate>
-		</Table>
-	 </Pagination> 
+		</RowTemplate>
+	</Table>
+	<Table Items="@OperationsTax.Operations">
+		<TableHeader>
+			<th>Дата</th>
+			<th>Тип</th>
+			<th>Валюта</th>
+			<th>Целая часть</th>
+			<th>Дробная</th>
+		</TableHeader>
+
+		<RowTemplate Context="operationsEntity">
+			<th scope="row">@operationsEntity.Date</th>
+			<td scope="row">@operationsEntity.OperationType</td>
+			<td scope="row">@operationsEntity.Payment.Currency</td>
+			<td scope="row">@operationsEntity.Payment.Units</td>
+			<td scope="row">@operationsEntity.Payment.Nano</td>
+
+		</RowTemplate>
+	</Table>
+	<Table Items="@OperationsTaxCorrection.Operations">
+		<TableHeader>
+			<th>Дата</th>
+			<th>Тип</th>
+			<th>Валюта</th>
+			<th>Целая часть</th>
+			<th>Дробная</th>
+		</TableHeader>
+
+		<RowTemplate Context="operationsEntity">
+			<th scope="row">@operationsEntity.Date</th>
+			<td scope="row">@operationsEntity.OperationType</td>
+			<td scope="row">@operationsEntity.Payment.Currency</td>
+			<td scope="row">@operationsEntity.Payment.Units</td>
+			<td scope="row">@operationsEntity.Payment.Nano</td>
+
+		</RowTemplate>
+	</Table>
 </LoadingContent>

@@ -1,10 +1,12 @@
-﻿using TF.Constants;
+﻿using System.Xml.Linq;
+using System;
+using TF.Constants;
 using TF.Enums.Operation;
 
 namespace TF.Model.Operation.Operations
 {
-    public class Operation
-    {
+    public class Operation : IComparable
+	{
         /// <summary>
         /// Идентификатор операции.
         /// </summary>
@@ -94,5 +96,13 @@ namespace TF.Model.Operation.Operations
         /// Уникальный идентификатор инструмента.
         /// </summary>
         public string InstrumentUid { get; set; }
-    }
+
+		public int CompareTo(object? obj)
+		{
+			if ((obj == null) || (!(obj is Operation)))
+				return 0;
+			else
+				return DateTime.Compare(Date, ((Operation)obj).Date);
+		}
+	}
 }
